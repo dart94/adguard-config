@@ -1,0 +1,12 @@
+{
+  "headers": [
+    {
+      "source": "/config.json",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Content-Type",                "value": "application/json; charset=utf-8" },
+        { "key": "Cache-Control",               "value": "public, s-maxage=3600, stale-while-revalidate=86400" }
+      ]
+    }
+  ]
+}

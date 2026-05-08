@@ -1,0 +1,37 @@
+{
+  "v": 1,
+  "minimos": {
+    "MXN": 100,
+    "COP": 4000,
+    "ARS": 900,
+    "BRL": 25,
+    "CLP": 4000,
+    "PEN": 18,
+    "USD": 5
+  },
+  "audiencia_error": 10000,
+  "audiencia_min": 50000,
+  "audiencia_max": 10000000,
+  "objetivos_exigentes": ["Ventas", "Clientes potenciales"],
+  "objetivos_requieren_pixel": ["Ventas", "Clientes potenciales"],
+  "objetivos": [
+    "Reconocimiento",
+    "Tráfico",
+    "Interacción",
+    "Clientes potenciales",
+    "Promoción de la aplicación",
+    "Ventas"
+  ],
+  "eventos_alta_intencion": [
+    "Compra", "Purchase",
+    "Iniciar pago", "InitiateCheckout",
+    "Registro completado", "CompleteRegistration",
+    "Enviar formulario", "Lead",
+    "Agregar información de pago", "AddPaymentInfo"
+  ],
+  "eventos_baja_intencion": [
+    "PageView", "Ver página",
+    "ViewContent", "Ver contenido"
+  ],
+  "geo_mundial": ["todo el mundo", "worldwide", "global"]
+}
