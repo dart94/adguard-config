@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad — AdGuard LATAM</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, 'Segoe UI', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1f2937;
+      background: #f9fafb;
+    }
+    header {
+      background: linear-gradient(135deg, #5b21b6, #7c3aed);
+      color: white;
+      padding: 40px 24px;
+      text-align: center;
+    }
+    header h1 { font-size: 26px; font-weight: 700; }
+    header p  { margin-top: 6px; opacity: 0.8; font-size: 14px; }
+    main {
+      max-width: 720px;
+      margin: 40px auto;
+      padding: 0 24px 60px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #111827;
+      margin: 36px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #ede9fe;
+    }
+    p  { margin-bottom: 12px; color: #374151; }
+    ul { margin: 8px 0 12px 20px; color: #374151; }
+    ul li { margin-bottom: 6px; }
+    .badge {
+      display: inline-block;
+      background: #f0fdf4;
+      color: #16a34a;
+      border: 1px solid #bbf7d0;
+      border-radius: 6px;
+      padding: 2px 10px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .highlight {
+      background: #faf5ff;
+      border-left: 4px solid #7c3aed;
+      padding: 14px 18px;
+      border-radius: 0 8px 8px 0;
+      margin: 16px 0;
+    }
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: #9ca3af;
+      padding: 24px;
+      border-top: 1px solid #e5e7eb;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🛡️ AdGuard LATAM</h1>
+  <p>Política de Privacidad</p>
+</header>
+
+<main>
+
+  <div class="highlight">
+    <strong>Resumen:</strong> AdGuard LATAM no recopila, almacena ni transmite ningún dato personal.
+    Todo el análisis ocurre localmente en tu navegador.
+  </div>
+
+  <h2>1. Qué es AdGuard LATAM</h2>
+  <p>
+    AdGuard LATAM es una extensión para Chrome que analiza la configuración de campañas
+    en Meta Ads Manager y muestra advertencias sobre posibles errores antes de activar
+    una pauta publicitaria. Opera exclusivamente dentro del navegador del usuario.
+  </p>
+
+  <h2>2. Datos que NO recopilamos</h2>
+  <p>AdGuard LATAM <strong>no recopila, no almacena y no transmite</strong>:</p>
+  <ul>
+    <li>Nombre, correo electrónico ni ningún dato de identificación personal</li>
+    <li>Datos de campañas, presupuestos, audiencias ni configuraciones de Meta Ads</li>
+    <li>Historial de navegación</li>
+    <li>Cookies ni identificadores de seguimiento</li>
+    <li>Información de cuentas de Facebook o Meta</li>
+  </ul>
+
+  <h2>3. Almacenamiento local</h2>
+  <p>
+    Los resultados del escaneo se guardan temporalmente en <code>chrome.storage.session</code>
+    — un almacenamiento local del navegador que se elimina automáticamente al cerrar la pestaña.
+    Ningún dato sale de tu dispositivo.
+  </p>
+  <p>
+    La configuración de reglas de validación se guarda en <code>chrome.storage.local</code>
+    para evitar descargas repetidas. Esta configuración no contiene datos del usuario.
+  </p>
+
+  <h2>4. Configuración remota</h2>
+  <p>
+    La extensión descarga periódicamente un archivo de configuración desde
+    <strong>GitHub</strong> para mantener actualizadas las reglas de validación
+    (presupuestos mínimos, objetivos, eventos de conversión). Esta descarga:
+  </p>
+  <ul>
+    <li>No envía ningún dato del usuario a GitHub ni a ningún servidor</li>
+    <li>Solo descarga reglas genéricas de validación (no personalizadas por usuario)</li>
+    <li>Ocurre máximo una vez cada 6 horas</li>
+  </ul>
+
+  <h2>5. Telemetría de errores técnicos</h2>
+  <p>
+    La extensión incluye un sistema de telemetría para detectar cuando Meta Ads Manager
+    actualiza su interfaz y rompe los detectores. Si se activa, este sistema envía
+    únicamente:
+  </p>
+  <ul>
+    <li>Versión de la extensión instalada</li>
+    <li>Lista de detectores que fallaron (ej. "moneda", "presupuesto")</li>
+    <li>Hash criptográfico (SHA-256) de la ruta URL — <em>no la URL completa</em></li>
+    <li>Marca de tiempo</li>
+  </ul>
+  <p>
+    <span class="badge">Actualmente desactivado</span> &nbsp;
+    Este sistema está desactivado por defecto. Si se activa en una versión futura,
+    se notificará en las notas de actualización.
+  </p>
+
+  <h2>6. Permisos del navegador</h2>
+  <p>La extensión solicita los siguientes permisos y los usa exclusivamente para:</p>
+  <ul>
+    <li><strong>Acceso a adsmanager.facebook.com:</strong> leer la configuración
+        visible de campañas para mostrar advertencias. No modifica ningún dato.</li>
+    <li><strong>storage:</strong> guardar resultados del escaneo y configuración
+        de reglas localmente.</li>
+    <li><strong>alarms:</strong> programar la descarga periódica de la
+        configuración de reglas.</li>
+  </ul>
+
+  <h2>7. Terceros</h2>
+  <p>
+    AdGuard LATAM no comparte datos con terceros, no integra redes publicitarias,
+    ni utiliza servicios de analítica de comportamiento de usuarios.
+  </p>
+  <p>
+    La única conexión externa es la descarga de configuración desde GitHub
+    (descrita en la sección 4), que no involucra datos del usuario.
+  </p>
+
+  <h2>8. Menores de edad</h2>
+  <p>
+    Esta extensión está dirigida a profesionales de marketing digital.
+    No recopilamos datos de ninguna persona, incluyendo menores de edad.
+  </p>
+
+  <h2>9. Cambios a esta política</h2>
+  <p>
+    Si esta política cambia de forma relevante (por ejemplo, si se activa la
+    telemetría), se notificará en las notas de actualización de la extensión
+    en Chrome Web Store y se actualizará la fecha de vigencia en este documento.
+  </p>
+
+  <h2>10. Contacto</h2>
+  <p>
+    Para cualquier consulta sobre privacidad escribe a:
+    <strong>riveratorrero@gmail.com</strong>
+  </p>
+
+  <p style="margin-top:32px; font-size:13px; color:#9ca3af;">
+    Última actualización: mayo 2026
+  </p>
+
+</main>
+
+<footer>
+  AdGuard LATAM &nbsp;·&nbsp; Extensión para Chrome &nbsp;·&nbsp; Hecha para anunciantes en LATAM
+</footer>
+
+</body>
+</html>
